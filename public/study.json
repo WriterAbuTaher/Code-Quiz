@@ -1,0 +1,51 @@
+[
+  {
+    "id": 456,
+    "sub": "Mathematics",
+    "img": "https://www.bing.com/th?id=OSK.HEROrB9_7S41F6yglj3pE5Dz97WRglLVc67sXOuWxAy3_oo&w=364&h=216&c=1&rs=2&o=6&oif=webp&pid=SANGAM",
+    "info": "Mathematics is an area of knowledge that includes such topics as numbers, formulas and related structures.",
+    "time": 25
+  },
+  {
+    "id": 112,
+    "sub": "English",
+    "img": "https://www.bing.com/th?id=OSK.HEROFUIjFugxIG8wlz916nZnVnNNHWP2plkmQ1Yf1tn7O8Q&w=364&h=216&c=1&rs=2&o=6&oif=webp&pid=SANGAM",
+    "info": "English is a West Germanic language of the Indo-European language family, with its earliest forms spoken by the inhabitants of early medieval England.",
+    "time": 45
+  },
+  {
+    "id": 535,
+    "sub": "Physics",
+    "img": "https://www.bing.com/th?id=OSK.HERO0vPAiPfOvKeq7hd6_fy5M1-hqTYnGYhbbzHLYw4Mb68&w=364&h=216&c=1&rs=2&o=6&oif=webp&pid=SANGAM",
+    "info": "Physics is the natural science that studies matter, its fundamental constituents, its motion and behavior through space and time.",
+    "time": 30
+  },
+  {
+    "id": 545,
+    "sub": "Chemistry",
+    "img": "https://www.bing.com/th?id=OSK.HEROCT4_YUxmcj_Yj649g7U7WPJoUGRCzhGFRXGmQVbiCvE&w=364&h=216&c=1&rs=2&o=6&oif=webp&pid=SANGAM",
+    "info": "Chemistry is the scientific study of the properties and behavior of matter. It is a natural science that covers the elements that make up matter to the compounds composed of atoms.",
+    "time": 35
+  },
+  {
+    "id": 553,
+    "sub": "Biology",
+    "img": "https://www.bing.com/th?u=https%3a%2f%2ftse2.mm.bing.net%2fth%3fid%3dOIP.tnozcerc0rmTHxdbaLXxfgHaFY&ehk=UFvSZoXHH6%2bDgyNhoqjih0MGIxGIVsLykPwr3jR1Aew%3d&w=130&h=120&c=8&o=6&pid=AppEx",
+    "info": "Biology is the scientific study of life. It is a natural science with a broad scope but has several unifying themes that tie it together as a single, coherent field.",
+    "time": 45
+  },
+  {
+    "id": 241,
+    "sub": "History",
+    "img": "https://www.bing.com/th?id=ODL.7a00b6270ed213af2e32c3ef9772567f&w=100&h=100&o=6&pid=13.1",
+    "info": "History is an American pay television network and flagship channel owned by A&E Networks.",
+    "time": 60
+  },
+  {
+    "id": 220,
+    "sub": "Economics",
+    "img": "https://www.bing.com/th?id=OSK.HERONdvW5RioA4vyN_VBdPLIncehnz1ff9W3ELAejM8TUGk&w=364&h=216&c=1&rs=2&o=6&oif=webp&pid=SANGAM",
+    "info": "Economics is the social science that studies the production, distribution, and consumption of goods and services.",
+    "time": 30
+  }
+]
