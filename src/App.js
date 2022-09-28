@@ -1,9 +1,12 @@
 import './App.css';
+import Subjects from './Components/Subjects/Subjects';
+
+
 
 function App() {
   return (
     <div>
-      <h1>Project Start</h1>
+      <Subjects></Subjects>
     </div>
   );
 }
