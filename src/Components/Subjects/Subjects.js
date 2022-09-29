@@ -15,7 +15,6 @@ const Subjects = () => {
     }, [])
 
     const addToStudy = (subject) => {
-        // console.log(subject);
         const newStudy = [...study, subject];
         setStudy(newStudy);
     }

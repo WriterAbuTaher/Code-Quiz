@@ -3,8 +3,6 @@ import "./Subject.css"
 
 const Subject = (props) => {
 
-    // console.log(props);
-
     const { addToStudy, subject } = props
 
     const { sub, img, info, time } = subject;

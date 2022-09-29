@@ -48,9 +48,6 @@ const Calculate = (props) => {
         )
     }
 
-
-    // console.log(study);
-
     let TotalTime = 0;
     for (const studytime of study) {
         TotalTime += studytime.time;
@@ -97,7 +94,7 @@ const Calculate = (props) => {
             </div>
 
             {/* study time */}
-            <h4>Time Detail</h4>
+            <h4>Time Details</h4>
             <div>
                 <div className='bg-light p-3 rounded d-md-flex justify-content-between align-items-center my-3 text-black'>
                     <h5>Study Time</h5>
