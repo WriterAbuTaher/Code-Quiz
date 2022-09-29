@@ -1,3 +1,12 @@
 .student img {
     width: 70px;
 }
+
+.calculate {
+    position: sticky;
+    top: 0;
+}
+
+.br-button:hover {
+    background-color: green;
+}
