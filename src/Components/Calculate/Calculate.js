@@ -1,7 +1,10 @@
 import React from 'react';
 import "./Calculate.css"
 
-const Calculate = () => {
+const Calculate = (props) => {
+
+    const { study } = props
+
     return (
         <div className='container text-white'>
             {/* student info */}
@@ -42,13 +45,15 @@ const Calculate = () => {
                 <button className='rounded-pill bg-white p-2 mx-1'></button>
             </div>
 
+            {/* study time */}
             <div>
-                <h4></h4>
                 <div className='bg-light p-3 rounded d-flex justify-content-between align-items-center my-3'>
-
+                    <h5>Study Time</h5>
+                    <h5></h5>
                 </div>
             </div>
 
+            <p>selected items {study.length}</p>
         </div>
     );
 };

@@ -6,6 +6,7 @@ import './Subjects.css'
 const Subjects = () => {
 
     const [subjects, setSubjects] = useState([]);
+    const [study, setStudy] = useState([]);
 
     useEffect(() => {
         fetch('study.json')
@@ -13,8 +14,10 @@ const Subjects = () => {
             .then(data => setSubjects(data))
     }, [])
 
-    const addToExercise = (subject) => {
+    const addToStudy = (subject) => {
         console.log(subject);
+        const newStudy = [...study, subject];
+        setStudy(newStudy);
     }
 
     return (
@@ -23,12 +26,12 @@ const Subjects = () => {
                 {
                     subjects.map(subject => <Subject key={subject.id}
                         subject={subject}
-                        addToExercise={addToExercise}
+                        addToStudy={addToStudy}
                     ></Subject>)
                 }
             </div>
             <div className='col-4 bg-success'>
-                <Calculate></Calculate>
+                <Calculate study={study}></Calculate>
             </div>
 
         </div>

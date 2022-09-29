@@ -5,7 +5,7 @@ const Subject = (props) => {
 
     // console.log(props);
 
-    const { addToExercise, subject } = props
+    const { addToStudy, subject } = props
 
     const { sub, img, info, time } = subject;
 
@@ -16,7 +16,7 @@ const Subject = (props) => {
                 <h3 className='card-title'>{sub}</h3>
                 <p className='card-text text-secondary'>{info}</p>
                 <p><b>{time} Minute</b></p>
-                <button onClick={() => addToExercise(subject)} className='btn btn-success'>Add to Wishlist</button>
+                <button onClick={() => addToStudy(subject)} className='btn btn-success'>Add to Wishlist</button>
             </div>
         </div>
     );
