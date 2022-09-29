@@ -1,15 +1,44 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Calculate.css"
 import Swal from 'sweetalert2'
+import 'boxicons'
 
 const Calculate = (props) => {
+    const { study } = props
 
     const [minute, setminute] = useState(0)
-    const break5m = (time) => setminute(time);
-    const break10m = (time) => setminute(time);
-    const break15m = (time) => setminute(time);
-    const break20m = (time) => setminute(time);
-    const break30m = (time) => setminute(time);
+
+    useEffect(() => {
+        const newTime = localStorage.getItem("breakTime")
+        setminute(newTime);
+    }, [])
+
+    const setLoacalStorage = (time) => {
+        return (
+            localStorage.setItem("breakTime", time)
+        )
+    }
+
+    const break5m = (time) => {
+        setLoacalStorage(time)
+        setminute(time)
+    };
+    const break10m = (time) => {
+        setLoacalStorage(time)
+        setminute(time)
+    };
+    const break15m = (time) => {
+        setLoacalStorage(time)
+        setminute(time)
+    };
+    const break20m = (time) => {
+        setLoacalStorage(time)
+        setminute(time)
+    };
+    const break30m = (time) => {
+        setLoacalStorage(time)
+        setminute(time)
+    };
 
     const showToast = () => {
         Swal.fire(
@@ -19,7 +48,6 @@ const Calculate = (props) => {
         )
     }
 
-    const { study } = props
 
     // console.log(study);
 
@@ -38,7 +66,7 @@ const Calculate = (props) => {
 
                 <div>
                     <h5>Card title</h5>
-                    <p><small>Dhaka, Bangladesh</small></p>
+                    <p><small><box-icon name="map"></box-icon> Dhaka, Bangladesh</small></p>
                 </div>
             </div>
 
@@ -60,12 +88,12 @@ const Calculate = (props) => {
 
             {/* add a break */}
             <h4>Take a Break</h4>
-            <div className='bg-light p-3 rounded d-flex justify-content-around align-items-center my-3'>
-                <button onClick={() => break5m(5)} className='rounded-pill bg-white p-2 mx-1 br-button'>5m</button>
-                <button onClick={() => break10m(10)} className='rounded-pill bg-white p-2 mx-1'>10m</button>
-                <button onClick={() => break15m(15)} className='rounded-pill bg-white p-2 mx-1'>15m</button>
-                <button onClick={() => break20m(20)} className='rounded-pill bg-white p-2 mx-1'>20m</button>
-                <button onClick={() => break30m(30)} className='rounded-pill bg-white p-2 mx-1'>30m</button>
+            <div className='bg-light p-3 rounded d-flex justify-content-around align-items-center my-3 break'>
+                <button onClick={() => break5m(5)} className='rounded-pill p-2 mx-1'>5m</button>
+                <button onClick={() => break10m(10)} className='rounded-pill p-2 mx-1'>10m</button>
+                <button onClick={() => break15m(15)} className='rounded-pill p-2 mx-1'>15m</button>
+                <button onClick={() => break20m(20)} className='rounded-pill p-2 mx-1'>20m</button>
+                <button onClick={() => break30m(30)} className='rounded-pill p-2 mx-1'>30m</button>
             </div>
 
             {/* study time */}
