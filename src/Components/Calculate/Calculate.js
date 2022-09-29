@@ -65,7 +65,7 @@ const Calculate = (props) => {
                 </div>
 
                 <div>
-                    <h5>Card title</h5>
+                    <h5>Json Anderson</h5>
                     <p><small><box-icon name="map"></box-icon> Dhaka, Bangladesh</small></p>
                 </div>
             </div>
@@ -73,22 +73,22 @@ const Calculate = (props) => {
             {/* student more info */}
             <div className='d-md-flex my-4 justify-content-evenly text-center bg-primary p-2 rounded'>
                 <div>
-                    <h3>75 <small>kg</small></h3>
-                    <p>Weight</p>
+                    <h5>75 <small>kg</small></h5>
+                    <small>Weight</small>
                 </div>
                 <div>
-                    <h3>6.5</h3>
-                    <p>Height</p>
+                    <h5>6.5</h5>
+                    <small>Height</small>
                 </div>
                 <div>
-                    <h3>25 <small>yrs</small></h3>
-                    <p>Age</p>
+                    <h5>25 <small>yrs</small></h5>
+                    <small>Age</small>
                 </div>
             </div>
 
             {/* add a break */}
             <h4>Take a Break</h4>
-            <div className='bg-light p-3 rounded d-flex justify-content-around align-items-center my-3 break'>
+            <div className='bg-light p-3 rounded d-flex flex-wrap justify-content-around align-items-center my-3 break'>
                 <button onClick={() => break5m(5)} className='rounded-pill p-2 mx-1'>5m</button>
                 <button onClick={() => break10m(10)} className='rounded-pill p-2 mx-1'>10m</button>
                 <button onClick={() => break15m(15)} className='rounded-pill p-2 mx-1'>15m</button>
@@ -97,8 +97,9 @@ const Calculate = (props) => {
             </div>
 
             {/* study time */}
+            <h4>Time Detail</h4>
             <div>
-                <div className='bg-light p-3 rounded d-flex justify-content-between align-items-center my-3 text-black'>
+                <div className='bg-light p-3 rounded d-md-flex justify-content-between align-items-center my-3 text-black'>
                     <h5>Study Time</h5>
                     <h5>{TotalTime} Minute</h5>
                 </div>
@@ -106,13 +107,13 @@ const Calculate = (props) => {
 
             {/* break time */}
             <div>
-                <div className='bg-light p-3 rounded d-flex justify-content-between align-items-center my-3 text-black'>
+                <div className='bg-light p-3 rounded d-md-flex justify-content-between align-items-center my-3 text-black'>
                     <h5>Break Time</h5>
                     <h5>{minute} Minute</h5>
                 </div>
             </div>
 
-            <button onClick={() => showToast()} className='btn btn-primary w-100 p-2'>Activity Complete</button>
+            <button onClick={() => showToast()} className='btn btn-primary w-100 p-2 my-4'>Activity Complete</button>
 
         </div>
     );

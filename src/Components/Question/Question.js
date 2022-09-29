@@ -56,7 +56,11 @@ const Question = () => {
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <p></p>
+                                <li>state change: validating input field</li>
+                                <li>state change: live filtering</li>
+                                <li>state change: trigger animation on new array value</li>
+                                <li>props change: update paragraph list on fetched API data update</li>
+                                <li>props change: updating fetched API data to get BTC updated price</li>
                             </div>
                         </div>
                     </div>
