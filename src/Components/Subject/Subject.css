@@ -1,17 +1,22 @@
 .sub-card {
     width: 300px;
     height: 510px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     margin: 1rem;
     border-radius: 1rem;
     position: relative;
+    background-color: rgb(255, 196, 255);
 }
 
 .sub-info {
     padding: .5rem;
 }
 
-.sub-card img {
+.sub-info h1 {
+    margin: .5rem 0;
+}
+
+.sub-info img {
     width: 286px;
     height: 200px;
     border-radius: 1rem;
@@ -25,10 +30,10 @@ button {
     bottom: 0;
     border-radius: 0 0 1rem 1rem;
     border: none;
-    background-color: #FFE0B3;
+    background-color: lightseagreen;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: orange;
+    background-color: white;
 }

@@ -1,0 +1,14 @@
+.study-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.sub-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 4rem;
+}
+
+.calculate-container {
+    background-color: lightseagreen;
+}
