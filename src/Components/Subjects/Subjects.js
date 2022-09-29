@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Calculate from '../Calculate/Calculate';
 import Subject from '../Subject/Subject';
 import './Subjects.css'
 
@@ -12,15 +13,22 @@ const Subjects = () => {
             .then(data => setSubjects(data))
     }, [])
 
+    const addToExercise = (subject) => {
+        console.log(subject);
+    }
+
     return (
-        <div className='study-container'>
-            <div className='sub-container'>
+        <div className='row'>
+            <div className='container col-8 sub-container'>
                 {
-                    subjects.map(subject => <Subject key={subject.id} subject={subject}></Subject>)
+                    subjects.map(subject => <Subject key={subject.id}
+                        subject={subject}
+                        addToExercise={addToExercise}
+                    ></Subject>)
                 }
             </div>
-            <div className='calculate-container'>
-
+            <div className='col-4 bg-success'>
+                <Calculate></Calculate>
             </div>
 
         </div>
